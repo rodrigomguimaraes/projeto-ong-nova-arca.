@@ -1,0 +1,202 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #1b3520  0%, #1b3520  100%);
+  color: #fff;
+  line-height: 1.7;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+
+header {
+  background-color: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Logo {
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.Menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.Menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.Menu a:hover {
+  color: #b9f6ca;
+  transform: scale(1.05);
+  border-bottom: 2px solid #b9f6ca;
+}
+
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 1rem 2rem;
+}
+
+.hero-conteudo h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.2rem;
+}
+
+.hero-conteudo hr {
+  width: 80px;
+  border: 2px solid #b9f6ca;
+  margin: 1rem auto;
+}
+
+.hero-conteudo h2 {
+  font-weight: 400;
+  color: #e8f5e9;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+
+ 
+.hero-imagem img {
+  width: 100%;
+  max-width: 700px;     
+  margin-top: 3rem;
+  border-radius: 25px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  border: 3px solid rgba(255, 255, 255, 0.15);
+}
+
+
+.hero-imagem img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+
+main section {
+  width: 90%;
+  max-width: 900px;
+  margin: 3rem auto;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+section h2 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+  border-left: 4px solid #b9f6ca;
+  padding-left: 10px;
+  font-size: 1.6rem;
+}
+
+section h3 {
+  margin-top: 1.5rem;
+  color: #b9f6ca;
+}
+
+section p {
+  margin-top: 0.6rem;
+  color: #f1f1f1;
+}
+
+section ul {
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+}
+
+section li {
+  margin-bottom: 0.5rem;
+}
+
+
+section ul a {
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+section ul a:hover {
+  color: #b9f6ca;
+}
+
+
+section img {
+  display: block;
+  margin: 2rem auto;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+}
+
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+
+a, button, img, li, h1, h2, h3, p {
+  transition: all 0.3s ease;
+}
+
+main section:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .hero-conteudo h1 {
+    font-size: 1.8rem;
+  }
+
+  .Menu {
+    gap: 1rem;
+  }
+
+  main section {
+    width: 95%;
+    padding: 1.5rem;
+  }
+}
